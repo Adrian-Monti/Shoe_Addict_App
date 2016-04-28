@@ -24,7 +24,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.0'
-gem 'carrierwave'
+
+#gem 'carrierwave'
+# Process your uploads in the background by uploading directly to S3
+gem 'carrierwave_direct', :git => "git://github.com/dwilkie/carrierwave_direct.git"
 gem 'mini_magick'
 gem "fog"
 
@@ -42,6 +45,11 @@ gem "fog"
 
 group :test do
   gem 'capybara'
+  # Poltergeist is a driver for Capybara.
+  # It allows you to run your Capybara tests on a headless WebKit...
+  gem 'poltergeist'
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
+
 end
 
 group :development, :test do
