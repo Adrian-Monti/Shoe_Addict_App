@@ -16,4 +16,10 @@ notifications:
   email:
     on_success: always
     on_failure: always
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: bbgrO4r1gO7IlhAzxGgK9OBZDjFvdoj0V5qnollu7NlWl6nhwP/DI5qpVP3fE/c8Hh+5hVoasr5HFqNzSS8YSoQ+AVPhWpmPJpCyFBP3r9bXbYrAgBPvVOEPRebOWkoIdcTH5tshFpg9w5Wah5ulfGw/BKbFLYTM6/gfMswA7GQou38Q+rq33vIKglwDvpU7ppJbLitOUQHW9xAAmwzJzp12qlkFgjPnWtPYasAwL3wH/nY4ARAjX6j+2XDpl+pR3XmUJ3eAPdjeG7Wt8WLDfPD+UfdZYdBmv9hX2rdFtw88/keSy7j1clGws0eZ8ZEVp28/fvCWPAyhNxIDnZZgAocZ0CeMW39nnoxFGeCvp3ZGrOvA7ipwiWPjSw0hfAqAn+O64SSq1ki1pDVz4RoiN9hS8RiQYtC/uzzaidFQRLAdvyki822vj+9+lT2aLhyTHnOr/KJ4TsQKpua4LB5SJegJBKKubXy7EKkKWRALNqGwJsii++UciWy0OTqpMzEjjx37gLRRrnfwlF+N9oT6fNNV23u7ZZ5naZKVa9iheSyRe/p8xWnfpQZaZQ0h4eKi9bxa1gY2cORDyt6uzvqZLlENJt+sUzl/e5VHCXst+6kZCq7ZLPoJ1JO5+zOkj+fj+eefoWFLAyzVtn6Y+kV2LEUj9ikHRiDgI3QX0MgSdUo=
+  app: safe-scrubland-32633
+  on:
+    repo: Adrian-Monti/Shoe_Addict_App
